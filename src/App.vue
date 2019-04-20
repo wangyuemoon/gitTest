@@ -1,5 +1,6 @@
-<template>
+﻿<template>
   <div id="app">
+    <p>24234234</p>
     <input type="text" v-model="lala">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
