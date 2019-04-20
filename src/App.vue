@@ -9,6 +9,7 @@
       <li v-for="(good,index) in goods" :key="index">
         <span>{{good.text}}</span>
         <span>￥{{good.price}}</span>
+        <input type="text" v-model="lala">
         <button @click="addgood(good)">加购</button>
       </li>
     </ul>
