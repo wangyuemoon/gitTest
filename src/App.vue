@@ -10,6 +10,7 @@
     <ul>
       <li v-for="(good,index) in goods" :key="index">
         <span>{{good.price}}</span>
+        <span>{{good.name}}</span>
         <span>{{good.text}}</span>
         <span>￥{{good.price}}</span>
         <p>358282743</p>
