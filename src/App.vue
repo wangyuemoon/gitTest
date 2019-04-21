@@ -9,10 +9,13 @@
     <ul>
       <li v-for="(good,index) in goods" :key="index">
         <span>{{good.text}}</span>
+        <span>{{good.text}}</span>
         <span>￥{{good.price}}</span>
-        <p>358282743<p>
-        <input type="text" v-model="lala">
-        <button @click="addgood(good)">加购</button>
+        <p>358282743</p>
+        <p>
+          <input type="text" v-model="lala">
+          <button @click="addgood(good)">加购</button>
+        </p>
       </li>
     </ul>
     <!-- 购物车 -->
@@ -33,27 +36,27 @@ export default {
   },
   data() {
     return {
-      goods:[],
-      lala:'2'
+      goods: [],
+      lala: '2'
     }
   },
-  async created(){
-    const reponse=await axios.get('/api/goods');
+  async created() {
+    const reponse = await axios.get('/api/goods');
     console.log(reponse);
-    this.goods=reponse.data.list;
+    this.goods = reponse.data.list;
   },
-  methods:{
-    addgood(good){
-      this.$bus.$emit('addgood',good);
+  methods: {
+    addgood(good) {
+      this.$bus.$emit('addgood', good);
     }
   },
-  
+
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
