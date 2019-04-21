@@ -4,6 +4,7 @@
     <input type="text" v-model="lala">
     <img alt="Vue logo" src="./assets/logo.png">
     <img alt="Vue logo" src="./assets/logo.png">
+    <p>21分更改了</p>
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <!-- 商品列表 -->
     <ul>
