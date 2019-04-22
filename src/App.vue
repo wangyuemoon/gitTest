@@ -13,6 +13,7 @@
         <span>{{good.text}}</span>
         <span>{{good.text}}</span>
         <span>￥{{good.price}}</span>
+        <span>6777fvfv</span>
         <p>358282743</p>
         <p>
           <input type="text" v-model="lala">
